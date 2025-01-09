@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Price Prediction</title>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #f8f9fa; margin: 0; padding: 0;">
+    <div style="max-width: 600px; margin: 50px auto; background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        <h1 style="text-align: center; color: #007bff;">House Price Prediction</h1>
+        <form action="/predict" method="POST" style="display: flex; flex-direction: column; gap: 15px;">
+            <label style="font-weight: bold;" for="area">Area (sq ft):</label>
+            <input style="padding: 10px; border: 1px solid #ddd; border-radius: 4px;" type="number" id="area" name="area" step="0.01" required>
+
+            <label style="font-weight: bold;" for="bedrooms">Bedrooms:</label>
+            <input style="padding: 10px; border: 1px solid #ddd; border-radius: 4px;" type="number" id="bedrooms" name="bedrooms" required>
+
+            <label style="font-weight: bold;" for="bathrooms">Bathrooms:</label>
+            <input style="padding: 10px; border: 1px solid #ddd; border-radius: 4px;" type="number" id="bathrooms" name="bathrooms" required>
+
+            <label style="font-weight: bold;" for="stories">Stories:</label>
+            <input style="padding: 10px; border: 1px solid #ddd; border-radius: 4px;" type="number" id="stories" name="stories" required>
+
+            <label style="font-weight: bold;" for="mainroad">Main Road (yes/no):</label>
+            <input style="padding: 10px; border: 1px solid #ddd; border-radius: 4px;" type="text" id="mainroad" name="mainroad" required>
+
+            <label style="font-weight: bold;" for="guestroom">Guest Room (yes/no):</label>
+            <input style="padding: 10px; border: 1px solid #ddd; border-radius: 4px;" type="text" id="guestroom" name="guestroom" required>
+
+            <label style="font-weight: bold;" for="basement">Basement (yes/no):</label>
+            <input style="padding: 10px; border: 1px solid #ddd; border-radius: 4px;" type="text" id="basement" name="basement" required>
+
+            <label style="font-weight: bold;" for="hotwaterheating">Hot Water Heating (yes/no):</label>
+            <input style="padding: 10px; border: 1px solid #ddd; border-radius: 4px;" type="text" id="hotwaterheating" name="hotwaterheating" required>
+
+            <label style="font-weight: bold;" for="airconditioning">Air Conditioning (yes/no):</label>
+            <input style="padding: 10px; border: 1px solid #ddd; border-radius: 4px;" type="text" id="airconditioning" name="airconditioning" required>
+
+            <label style="font-weight: bold;" for="parking">Parking Spaces:</label>
+            <input style="padding: 10px; border: 1px solid #ddd; border-radius: 4px;" type="number" id="parking" name="parking" required>
+
+            <label style="font-weight: bold;" for="prefarea">Preferred Area (yes/no):</label>
+            <input style="padding: 10px; border: 1px solid #ddd; border-radius: 4px;" type="text" id="prefarea" name="prefarea" required>
+
+            <button type="submit" style="padding: 10px 15px; background-color: #007bff; color: #fff; border: none; border-radius: 4px; cursor: pointer;">Predict Price</button>
+        </form>
+    </div>
+</body>
+</html>
